@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        header.top {
+            text-align: center;
+            color: blue;
+            background: gold;
+        }
+
+        header.article {
+            color: plum;
+            text-align: center;
+            text-style: bold;
+        }
+
+        .reporter {
+            color: steelblue;
+            width: 100%;
+            height: 205px;
+        }
+
+        time {
+            color: deeppink;
+            font-style: italic;
+        }
+
+        img {
+            float: right;
+            border-style: solid;
+            border-radius: 50%;
+        }
+
+        article {
+            width: 100%;
+        }
+
+        .col1 {
+            float: left;
+            width: 50%;
+        }
+
+        .col2 {
+            float: right;
+            width: 50%;
+        }
+
+        .main {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        aside {
+            float: right;
+            font-size: 40px;
+            width: 50%;
+            border-style: solid none;
+        }
+
+        .prog {
+            float: left;
+            width: 100%
+        }
+
+        .luckd {
+            float: left;
+            width: 100%;
+        }
+
+        footer {
+            float: left;
+            text-align: center;
+            color: blue;
+            background: gold;
+            width: 100%;
+        }
+
+        .container {
+            float: left;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <h1>SW Studio Today</h1>
+    </header>
+    <header class="article">
+        <h2>The record of the CSS class</h2>
+    </header>
+    <div class="main">
+        <div class="reporter">
+            <img src="https://scontent.fbkk6-2.fna.fbcdn.net/v/t1.0-9/68872768_2607308275985888_2596521688522817536_o.jpg?_nc_cat=106&ccb=3&_nc_sid=09cbfe&_nc_eui2=AeHL3A5FQP_Dy9V7M7rR-lyYDBJGpiVgcRYMEkamJWBxFt89cAY9bcHWQzNKM2U4hUHxfawoDaZRLt3UQBa8PaJ7&_nc_ohc=WkKqca4cie0AX_uwB30&_nc_ht=scontent.fbkk6-2.fna&oh=21dd0d1c7a270dc0c28902b5c030695b&oe=604A3B39"
+                alt="picture" width=200>Reported by <br>Mr. Tantatorn Suksangwarn<br> Time<br> ID 61010402<br><br><time
+                datetime="2020-02-14">Feb 10, 2021</time>
+
+        </div>
+        <article>
+            <section class="col1">
+                <h3>Introduction</h3>
+                <p>describe your background about CSS e.g.
+                <ul>
+                    <li>รู้จัก CSS นิดหน่อย</li>
+                    <li>ใช้ CSS บ้าง</li>
+                    <li>ใช้ในงาน Assignment</li>
+                    <li> CSS ช่วย styling ให้เอกสารเรา</li>
+                    <li> CSS ทำเว็บของเราให้สวยงามหน้าใช้</li>
+                    <li>etc.</li>
+                </ul>
+            </section>
+
+            <section class="col2">
+                <h3>The expectation</h3>
+                <p>Describe your expectations for today's class</p>
+                <p>You can list it like this:</p>
+                <ol>
+                    <li>รู้ที่มาที่ไปของ CSS</li>
+                    <li>การใช้งาน CSS เบื้องต้น</li>
+                    <li>ใช้ CSS ได้อย่างคล่องแคล่ว</li>
+                </ol>
+            </section>
+        </article>
+
+        <aside>
+            <p><em>"To be or not to be." Hamlet, Shakespeare</em></p>
+        </aside>
+        <div class="container">
+            <section class="prog">
+                <p>Progress of today's class <progress value="2" max="5"></progress></p>
+            </section>
+
+            <section class="luckd">
+                <p>register for lucky draw</p>
+                <form>
+                    <fieldset>
+                        <label>Name:</label><em>*</em> <input type="text" id="name" placeholder="John Smith" autofocus
+                            required><br>
+                        <label>email:</label><em>*</em> <input type="email" id="email" placeholder="abc@def.com"
+                            autofocus required><br>
+                        <label>Tel:</label><em>*</em> <input type="tel" id="tel" placeholder="0xx-xxxxxxx"
+                            pattern="[0-9]{3}-[0-9]{7}" autofocus required><br>
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+    </div>
+    <footer>
+        ce.kmitl all rights reserved & copyright 2020
+    </footer>
+</body>
+
+</html>
