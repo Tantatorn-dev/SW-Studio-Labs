@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lab</title>
+</head>
+<body>
+    <h1>Snapshots</h1>
+    <ul>
+        <li>
+            <a id='joe' href='https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc2MzAyNDY4NjM0NzgwODQ1/joe-biden-gettyimages-1267438366.jpg' onclick="changeImgSrc('joe')">Joe Biden</a>
+        </li>
+        <li>
+            <a id='elon' href='https://static.toiimg.com/thumb/msid-81364338,width-1070,height-580,imgsize-195316,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg' onclick="changeImgSrc('elon')">Elon Musk</a>
+        </li>
+        <li>
+            <a id='cat' href='https://static.bangkokpost.com/media/content/dcx/2020/08/17/3722547.jpg' onclick="changeImgSrc('cat')">Cat</a>
+        </li>
+        <li>
+            <a id='orca' href='https://upload.wikimedia.org/wikipedia/commons/3/37/Killerwhales_jumping.jpg' onclick="changeImgSrc('orca')">Orca</a>
+        </li>
+    </ul>
+
+    <img src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc2MzAyNDY4NjM0NzgwODQ1/joe-biden-gettyimages-1267438366.jpg">
+
+    <script>
+        function changeImgSrc(name){
+            event.preventDefault();
+            let href = document.getElementById(name).href;
+            let img_tag = document.querySelector('img');
+            img_tag.setAttribute('src', href);
+        }
+    </script>
+</body>
+</html>
